@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@100,200,300,400,500,600,700&family=EB+Garamond:ital,wght@1,100,200,300,400,500&family=Montserrat:ital,wght@1,100,200,300,400,500&display=swap" rel="stylesheet"');
 
 html {
     height: 100%;
 }
 
 body {
-    background: url('/media/prod-image13.jpg') no-repeat center center fixed;
+    background: url('/media/test1.jpg') no-repeat center center fixed;
     background-size: cover;
+    max-width:100%;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Garamond', sans-serif;
 }
 
 /* from Bulma */
@@ -22,7 +23,20 @@ body {
 }
 
 .logo-font {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.text-font{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    color: #1c1b1b;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size:20px;
+    margin-top:300px;
 }
 
 .main-logo-link {
@@ -180,6 +194,10 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
+   body {
+    background: url('/media/test1.jpg') no-repeat center center fixed;
+    background-size: cover;
+} 
   .container {
     max-width: 80%;
   }
