@@ -8,9 +8,9 @@
 
 {% block inner_content %}
 
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
-<hr>
+
+<h2 class="logo-sign mb-4 text-center">{% trans "Sign In" %}</h2>
+
 
 {% get_providers as socialaccount_providers %}
 
@@ -32,8 +32,8 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+<p class="text-center">{% blocktrans %}Don't have an account? Create one
+<a href="{{ signup_url }}">here</a>.{% endblocktrans %}</p>
 {% endif %}
 
 <form class="login" method="POST" action="{% url 'account_login' %}">

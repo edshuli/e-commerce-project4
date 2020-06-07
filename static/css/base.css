@@ -22,17 +22,20 @@ body {
     width: 1.5rem;
 }
 
+
 .logo-font {
+    color: #1c1b1b!important;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
-    letter-spacing: 1px;
+    letter-spacing: 0.2em;
+    font-size: 12px;
 }
 
 .text-font{
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
-    color: #1c1b1b;
+    color: #1c1b1b!important;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-size:20px;
@@ -44,20 +47,25 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    font-size: 14px;
+    background: #1c1b1b;
     color: white;
     min-width: 260px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    letter-spacing: 0.2em;
+
 }
 
 .btn-black {
-    background: black;
+    background: #1c1b1b;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 1px solid #1c1b1b;
 }
 
 .btn-outline-black:hover,
@@ -190,6 +198,23 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* -------------------------------- Sing Up */
+.logo-sign{
+    font-size:20px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1c1b1b;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+   
+}
+
+.allauth-form-inner-content a {
+    color: #000000!important;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -204,6 +229,10 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form formatting */
+.allauth-form-inner-content{
+    margin-top: 15%;
+}
+
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -211,8 +240,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+    border: 1px solid #d2d2d2;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -228,19 +256,21 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
+    font-family:"Montserrat", sans-serif;
     color: #fff;
-    text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #1c1b1b;
+    border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
+    text-align: center;
+    letter-spacing: 0.2em;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -326,6 +356,8 @@ input[name='q']::placeholder {
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
+        line-height: 0.5;
+        border: 0px;
     }
 
     #delivery-banner h4 {
