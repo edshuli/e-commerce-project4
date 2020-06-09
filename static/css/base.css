@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@100,200,300,400,500,600,700&family=EB+Garamond:ital,wght@1,100,200,300,400,500&family=Montserrat:ital,wght@1,100,200,300,400,500&display=swap" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montaga&family=Montserrat&family=Nunito+Sans&display=swap');
 
 html {
     height: 100%;
@@ -9,9 +9,11 @@ body {
     background-size: cover;
     max-width:100%;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Garamond', sans-serif;
+    font-style: normal;
+    color: black;
+    line-height: 1.65;
 }
+
 
 /* from Bulma */
 .icon {
@@ -22,6 +24,18 @@ body {
     width: 1.5rem;
 }
 
+.nav-link i.fa-lg {
+        font-size: 1em;
+}
+
+.main-font{
+  color: #1c1b1b!important;
+  font-family: 'Montaga', serif;
+  font-weight: 700;
+  text-transform: uppercase;  
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
 
 .logo-font {
     color: #1c1b1b!important;
@@ -32,6 +46,15 @@ body {
     font-size: 12px;
 }
 
+#logo-font{
+    color: #1c1b1b!important;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
 .text-font{
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -40,6 +63,15 @@ body {
     text-transform: uppercase;
     font-size:20px;
     margin-top:300px;
+}
+
+.products-font{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    color: #1c1b1b!important;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size:15px;
 }
 
 .main-logo-link {
@@ -90,7 +122,8 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #6c757d !important;
+    border-radius: 50px;
 }
 
 .bg-black {
@@ -129,6 +162,7 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
 
 /* ------------------------------- bootstrap toasts */
 
@@ -198,7 +232,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Sing Up */
+/* -------------------------------- All Auth */
 .logo-sign{
     font-size:20px;
     font-family: "Montserrat",sans-serif;
@@ -214,19 +248,6 @@ input[name='q']::placeholder {
     color: #000000!important;
 }
 
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-   body {
-    background: url('/media/test1.jpg') no-repeat center center fixed;
-    background-size: cover;
-} 
-  .container {
-    max-width: 80%;
-  }
-}
 
 /* Allauth form formatting */
 .allauth-form-inner-content{
@@ -248,7 +269,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+    color: #6d7379;
 }
 
 .allauth-form-inner-content button,
@@ -284,8 +305,18 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #f2f2f2!important; /* text-info */
 }
+
+.text-info{
+   color: #343a40!important; 
+}
+
+.text-danger {
+    color: #bd2130!important;
+}
+
+
 
 /* Product Form */
 
@@ -315,8 +346,61 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+ .small-text{
+        color: #1c1b1b!important;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 0.2em;
+        font-size: 12px; 
+}
 
-/* fixed top navbar only on medium and up */
+.text-primary {
+    color: #912c35!important;
+}
+
+
+/* -------------------------------- Quantity Button */
+.quantity-selector {
+    border: 1px solid #d2d2d2;
+    align-items: center;
+}
+
+#quantity-input{
+    border: 1px solid #d2d2d2;
+}
+
+.qty_input{
+    border: transparent;
+    text-align: center;
+}
+
+.cart-text{
+  color: #1c1b1b!important;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+}
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+   body {
+    background: url('/media/test1.jpg') no-repeat center center fixed;
+    background-size: cover;
+} 
+  .container {
+    max-width: 80%;
+  }
+  .remove-item {
+      padding-left:32px!important;
+  }
+ 
+}
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -331,7 +415,6 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -349,19 +432,11 @@ input[name='q']::placeholder {
         padding: 0.15rem;
     }
 
-    .nav-link i.fa-lg {
-        font-size: 1rem;
-    }
-
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
         line-height: 0.5;
         border: 0px;
-    }
-
-    #delivery-banner h4 {
-        font-size: .9rem;
     }
 
     .btn.btn-outline-black.rounded-0,
@@ -377,5 +452,31 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+        background-color: transparent;
+        border: 0 transparent;
+    }
+
+    #icon {
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        height: 10px;
+        width: 10px;
+        color:#343a40;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .w-50{
+        width: 30%!important;
     }
 }
+
+@media (max-width: 325px) {
+    .list-inline-item:not(:last-child) {
+        margin-right: .1rem;
+    }
+}
+
+

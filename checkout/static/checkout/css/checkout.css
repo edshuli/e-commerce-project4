@@ -1,4 +1,7 @@
-  
+.container{
+    color: #f2f2f2;
+}
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
