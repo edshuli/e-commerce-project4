@@ -23,7 +23,7 @@ SECRET_KEY = '@oj1nw+-1jskn1%of3%gn$e@1$t$d8j-p9b%_7m_ot74&@(o&9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ecomproject4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ecompro4.herokuapp.com', 'localhost']
 
 
 # Application definition
