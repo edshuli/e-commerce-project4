@@ -66,6 +66,6 @@ select option[value=""] {
 }
 
 #submit-button{
-    background: #968c53f2;
-    color: #212529;
+    background: #1c1b1b;
+    color: white;
 }

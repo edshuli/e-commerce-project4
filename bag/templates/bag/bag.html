@@ -63,10 +63,10 @@
                         <table class="table table-sm table-borderless">
                             <thead class="logo-font">
                                 <tr>
-                                    <th scope="col">Product Info</th>
+                                    <th scope="col">Product</th>
                                     <th scope="col"></th>
                                     <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Total</th>
                                 </tr>
                             </thead>
                             
@@ -102,7 +102,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-white rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
